@@ -1,6 +1,6 @@
 /**
  * Created by chenpeiwen on 2019/3/24.
- * 动态获取坐席信息
+ * 动态获取acd配置
  */
 var axios = require("axios")
 var instance = axios.create({

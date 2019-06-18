@@ -1,6 +1,6 @@
 /**
  * Created by chenpeiwen on 2019/3/24.
- * 动态获取坐席信息
+ * 动态获取队列配置
  */
 var axios = require("axios")
 var instance = axios.create({
@@ -10,10 +10,7 @@ var instance = axios.create({
     headers: {'Content-Type': 'text/xml'}
 });
 
-console.log("init")
 
-var Android = 2;
-var Ios = 3;
 
 axios.post('http://10.0.33.96:8110/RPC2', '<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\n' +
     '<methodCall>\n' +

@@ -11,14 +11,18 @@ var instance = axios.create({
 });
 
 
-axios.post('http://10.0.33.96:8110/RPC2', '<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\n' +
+axios.post('http://10.0.33.96:8110/RPC2',
+    '<?xml version=\\"1.0\\" encoding=\\"UTF-8\\"?>\n' +
     '<methodCall>\n' +
-    '\t<methodName>get</methodName>\n' +
+    '\t<methodName>action</methodName>\n' +
     '\t<params>\n' +
     '\t\t<param>\n' +
     '\t\t\t<value><struct>\n' +
     '\t\t\t\t<member>\n' +
-    '\t\t\t\t\t<name>object-class</name><value><string>acd-line</string></value>\n' +
+    '\t\t\t\t\t<name>object-class</name><value><string>acd-queue</string></value>\n' +
+    '\t\t\t\t</member>\n' +
+    '\t\t\t\t<member>\n' +
+    '\t\t\t\t\t<name>get-unroute-call</name><value><string>sip:400_organ2@acd.u3c.com</string></value>\n' +
     '\t\t\t\t</member>\n' +
     '\t\t\t</struct></value>\n' +
     '\t\t</param>\n' +
